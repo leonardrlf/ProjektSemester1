@@ -15,13 +15,12 @@ random_Wort():
 
 
 
-def
-wort_Darstellung(wort,erratene_Buchstaben):
-display = ""                                    ##Erstellen von Ausgabevariable für das Wort oder erratene Buchstaben 
-for buchstabe in wort:                          ## Wenn ein Buchstabe in einem Wort erraten wurde wird er zu der Displayausgabe hinzugefügt
+def wort_Darstellung(wort,erratene_Buchstaben):
+display = ""                                    ##creating a variable for display 
+for buchstabe in wort:                          ## if letter guessed store in display
  if buchstabe in erratene_buchstabe:
   display += buchstabe
-else:                                           ## Für alle noch nicht erratenen Buchstaben im Wort schreibe "_"
+else:                                           ## for every letter which isn't guessed write "_"
  display += "_"
 
 return display
