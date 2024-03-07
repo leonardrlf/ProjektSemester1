@@ -2,21 +2,13 @@
 ########## Autoren: Leonard Rolf, Levin Köppe, Younes Bareche, Noah Klug, Simon Kieslich####
 ###### Erstellt vom 05.03.2024 bis 21.03.2024 ###############
 
-<<<<<<< HEAD
-import
- random
+import random
 
+def random_Wort():  
+    woerter = ["karlsruhe","darmstadt","bremerhafen","hamburg","berlin","köln","kiel","nuernberg","chemnitz","cottbus","saarbruecken","trier","neubrandenburg"]
+    return random.choice(woerter)
 
-def
-random_Wort():
-
-
-
-
-
-
-def
-wort_Darstellung(wort,
+def wort_Darstellung(wort,
 erratene_Buchstaben):
 
 
