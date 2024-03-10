@@ -63,4 +63,13 @@ def galgenmännchen():
                 if guess not in Wort:
                     versuche -= 1
                     print(f"Falsch! Du hast noch {versuche} Versuche übrig.")
+            
+            #guess same leght as word and consists of characters 
+            elif len(guess) == len(Wort) and guess.isalpha():
+                if guess == Wort:                                                           #right guess 
+                    print(f"Herzlichen Glückwunsch! Du hast das Wort '{Wort}' erraten.")
+                    break
+                else:
+                    versuche -= 1
+                    print(f"Falsch! Du hast noch {versuche} Versuche übrig.")
 
