@@ -51,9 +51,16 @@ def galgenmännchen():
             guess = input("Rate einen Buchstaben oder gib das gesamte Wort ein: ").lower()      #input of guess
 
             
-            #review if guessed letter is already guessed
+            #only one letter, is it really a letter and in word?
             if len(guess) == 1 and guess.isalpha():
                 if guess in bisherige_Buchstaben:
                     print("Du hast diesen Buchstaben bereits geraten. Versuche es erneut.")
                     continue
+
+                bisherige_Buchstaben.append(guess)  #put new letter in array
+
+                #letter not in word, remove one attmept
+                if guess not in Wort:
+                    versuche -= 1
+                    print(f"Falsch! Du hast noch {versuche} Versuche übrig.")
 
