@@ -2,9 +2,7 @@
 ########## Autoren: Leonard Rolf, Levin Köppe, Younes Bareche, Noah Klug, Simon Kieslich####
 ###### Erstellt vom 05.03.2024 bis 21.03.2024 ###############
 
-<<<<<<< HEAD
-import
- random
+import random
 
 
 def random_Wort():
@@ -15,6 +13,7 @@ def random_Wort():
 
 
 def wort_Darstellung(wort, erratene_Buchstaben):
+ 
 
 
 
@@ -47,7 +46,15 @@ def galgenmännchen():
         while versuche > 0:
             mischung_wort_strich = wort_Darstellung(Wort, bisherige_Buchstaben)  #display of word
             print(f"Aktueller Stand: {mischung_wort_strich}")
-            galgenmann(6 - versuche)                                                            #display of hangman
+
+            #display hangman on easy mode after 2 wrong inputs 
+            trys = 6 - versuche
+            if trys <= 0:
+                trys = 0
+
+
+
+            galgenmann(trys)                                                            #display of hangman
             guess = input("Rate einen Buchstaben oder gib das gesamte Wort ein: ").lower()      #input of guess
 
             
@@ -90,8 +97,9 @@ def galgenmännchen():
 
         #losing condition 
         if versuche == 0:
+            trys += 1
             print(f"Leider verloren! Das richtige Wort war '{Wort}'.")
-            galgenmann(6 - versuche)    #display hangman
+            galgenmann(trys)    #display hangman
             
         #play angain or ending 
         play_again = input("Möchtest du noch einmal spielen? (ja/nein): ").lower()
