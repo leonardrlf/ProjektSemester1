@@ -7,38 +7,39 @@ import
  random
 
 
-def
-random_Wort():
+def random_Wort():
 
 
 
 
 
 
-def
-wort_Darstellung(wort,
-erratene_Buchstaben):
+def wort_Darstellung(wort, erratene_Buchstaben):
 
 
 
 
 
 
-def
-galgenmann(versuche):
+def galgenmann(versuche):
 
 
 
 
 
 
-def
-versuche_bis_verloren():
+def versuche_bis_verloren():
 
 
 
 
+# Game flow
 
+def galgenmännchen():
+ game = True
+ while game == True:
+        Wort = random_Wort()    #chose word 
+        bisherige_Buchstaben = []       #create array for already used letters 
+        versuche = versuche_bis_verloren()      #recognize level of difficulty 
 
-def
-galgenmännchen():
+        print("Willkommen bei Galgenmännchen!")
