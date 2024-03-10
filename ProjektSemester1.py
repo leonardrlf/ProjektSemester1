@@ -43,3 +43,10 @@ def galgenmännchen():
         versuche = versuche_bis_verloren()      #recognize level of difficulty 
 
         print("Willkommen bei Galgenmännchen!")
+
+        while versuche > 0:
+            mischung_wort_strich = wort_Darstellung(Wort, bisherige_Buchstaben)  #display of word
+            print(f"Aktueller Stand: {mischung_wort_strich}")
+            galgenmann(6 - versuche)                                                            #display of hangman
+            guess = input("Rate einen Buchstaben oder gib das gesamte Wort ein: ").lower()      #input of guess
+
