@@ -91,6 +91,7 @@ def galgenmännchen():
         #losing condition 
         if versuche == 0:
             print(f"Leider verloren! Das richtige Wort war '{Wort}'.")
+            galgenmann(6 - versuche)    #display hangman
             
         #play angain or ending 
         play_again = input("Möchtest du noch einmal spielen? (ja/nein): ").lower()
