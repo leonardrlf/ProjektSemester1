@@ -50,3 +50,10 @@ def galgenmännchen():
             galgenmann(6 - versuche)                                                            #display of hangman
             guess = input("Rate einen Buchstaben oder gib das gesamte Wort ein: ").lower()      #input of guess
 
+            
+            #review if guessed letter is already guessed
+            if len(guess) == 1 and guess.isalpha():
+                if guess in bisherige_Buchstaben:
+                    print("Du hast diesen Buchstaben bereits geraten. Versuche es erneut.")
+                    continue
+
