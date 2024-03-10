@@ -85,7 +85,7 @@ def galgenmännchen():
 
             #review if word is fully guessed 
             if "_" not in wort_Darstellung(Wort, bisherige_Buchstaben):
-                print("Herzlichen Glückwunsch! Du hast das Wort '{Wort}' erraten.")
+                print(f"Herzlichen Glückwunsch! Du hast das Wort '{Wort}' erraten.")
                 break
 
         #losing condition 
