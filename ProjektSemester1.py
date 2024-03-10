@@ -88,3 +88,17 @@ def galgenmännchen():
                 print("Herzlichen Glückwunsch! Du hast das Wort '{Wort}' erraten.")
                 break
 
+        #losing condition 
+        if versuche == 0:
+            print(f"Leider verloren! Das richtige Wort war '{Wort}'.")
+            
+        #play angain or ending 
+        play_again = input("Möchtest du noch einmal spielen? (ja/nein): ").lower()
+        if play_again != 'ja':
+            game = False
+
+
+
+#####       THE GAME        #####
+
+galgenmännchen()
