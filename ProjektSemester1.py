@@ -83,3 +83,8 @@ def galgenmännchen():
                 print("Ungültige Eingabe. Bitte entweder einen Buchstaben raten oder das gesamte Wort eingeben.")
                 continue
 
+            #review if word is fully guessed 
+            if "_" not in wort_Darstellung(Wort, bisherige_Buchstaben):
+                print("Herzlichen Glückwunsch! Du hast das Wort '{Wort}' erraten.")
+                break
+
