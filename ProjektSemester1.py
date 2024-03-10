@@ -72,4 +72,14 @@ def galgenmännchen():
                 else:
                     versuche -= 1
                     print(f"Falsch! Du hast noch {versuche} Versuche übrig.")
+            
+            #guess longer than one character but not the searched word 
+            elif len(guess) != len(Wort) and guess.isalpha():
+                versuche -= 1
+                print(f"Falsches Wort! Du hast noch {versuche} Versuche übrig.")
+            
+            #every other input 
+            else:
+                print("Ungültige Eingabe. Bitte entweder einen Buchstaben raten oder das gesamte Wort eingeben.")
+                continue
 
