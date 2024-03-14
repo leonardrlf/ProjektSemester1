@@ -16,7 +16,7 @@ random_Wort():
 
 
 def wort_Darstellung(wort,erratene_Buchstaben):
-display = ""                                    ##creating a variable for display 
+display = ""                                    ##creating a variable for displaiing the guessed letters
 for buchstabe in wort:                          ## if letter guessed store in display
  if buchstabe in erratene_buchstabe:
   display += buchstabe
