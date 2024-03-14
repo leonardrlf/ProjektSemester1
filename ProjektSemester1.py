@@ -11,15 +11,15 @@ def random_word():  # function, which brings back a random word from our collect
     return random.choice(words)  # end of function, return to main with random word
 
 # defining function visualising_word
-def visualising_word(word, guessed_letters):
- display = ""                                    ## creating a variable for displaiing the guessed letters
+def visualising_word(word, already_guessed_letters):
+ visualisiation = ""                                    ## creating a variable for displaiing the guessed letters
  for letter in word:                          ## if letter guessed store in display
-    if letter in guessed_letters:
-        display += letter
+    if letter in already_guessed_letters:
+        visualisiation += letter
     else:                                        ## for every letter which isn't guessed write "_"
-        display += "_"
+        visualisiation += "_"
 
- return display
+ return visualisiation
 
 
 # defining function visualising_hangman
