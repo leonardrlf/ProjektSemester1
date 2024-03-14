@@ -2,6 +2,14 @@
 ##### Autoren: Leonard Rolf, Levin Köppe, Younes Bareche, Noah Klug, Simon Kieslich #####
 ######################### Erstellt vom 05.03.2024 bis 21.03.2024 #########################
 
+# HowTo: Dieses Programm ist aufgebaut, und für den Nutzer zu nutzen, wie das Spiel "Galgenmännchen".
+# Wenn das Programm startet, startet das Spiel welches wie folgt gespielt wird:
+# Das Programm hat "sich" ein Word "ausgesucht", welches hier in jedem Fall einer deutschen Stadt entspricht, und dem Benutzer die Anzahl der Buchstaben dieses Wortes mitgeteilt.
+# Der Benutzer rät nacheinander Buchstaben oder ganze Wörter und diese werden auf Vorhandenheit im Wort geprüft.
+# Der Benutzer hat abhängig von dem gewählten Schwierigkeitsgrad eine bestimmte Anzahl von Fehlversuchen, bevor er verloren hat,
+# diese werden neben der Zahl auch als immer mehr vervollständigendes Galgenmännchen dargestellt.
+# Errät der Benutzer das ganze Wort bevor er keine Versuche übrig hat, hat er gewonnen, andernfalls nicht.
+
 # import modul random
 import random   # import modul "random", so we have acces to random generator
 
