@@ -97,7 +97,6 @@ def galgenmann(versuche): # function, which visualizes the amount of trys by cre
         ]
     print(ettapen[versuche]) # the hangman is printed, depending on the amount of trys
 
-<<<<<<< HEAD
 def versuche_bis_verloren():  # Funktion "versuche_bis_verloren" definiert, um die Anzahl der Versuche basierend auf dem Schwierigkeitsgrad zurückzugeben
    schwierigkeit = input("Wähle einen Schwierigkeitsgrad (leicht(1), mittel(2), schwer(3)): ").lower() # Benutzer wird aufgefordert, einen Schwierigkeitsgrad zu wählen
    if schwierigkeit == "1": # Überprüfung, ob der Schwierigkeitsgrad "1" ist
