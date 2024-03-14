@@ -10,10 +10,10 @@ def random_Wort():  # function, which brings back a random word from our collect
     woerter = ["karlsruhe","darmstadt","bremerhafen","hamburg","berlin","köln","kiel","nuernberg","chemnitz","cottbus","saarbruecken","trier","neubrandenburg"] # our word collection: citys of Germany
     return random.choice(woerter) # end of function, return to main with random word
 
-def wort_Darstellung(wort,erratene_Buchstaben):
+def wort_Darstellung(wort, erratene_buchstaben):
  display = ""                                    ##creating a variable for displaiing the guessed letters
  for buchstabe in wort:                          ## if letter guessed store in display
-    if buchstabe in erratene_buchstabe:
+    if buchstabe in erratene_buchstaben:
         display += buchstabe
     else:                                           ## for every letter which isn't guessed write "_"
         display += "_"
